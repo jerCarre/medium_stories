@@ -64,7 +64,7 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
 
 ```
 
-## distribution chart
+## Bitcoin last 60 days distribution chart
 
 ```vegalite
 {
