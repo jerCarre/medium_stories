@@ -2,4 +2,4 @@
 
 * [Home](/)
 
-* [Docsify+Vega+Github](/docsify_vega_github/README.md ':include')
+* [Docsify+Vega+Github](/docsify_vega_github/)
