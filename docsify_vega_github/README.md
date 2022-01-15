@@ -133,6 +133,8 @@ Pour obtenir :
 
 Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Il y a tout de même des contraintes : pas decgestion de header et uniquement en GET. Après quelques recherches, [coingecko](https://www.coingecko.com/en/api) semble correspondre. Il permet d'avoir le cours d'une crypto sur les X derniers jours, et ne nécessite pas de token d'accès.
 
+> Dans la mesure ou l'appel vers cette API est réalisé par le navigateur, il sera impossible de masquer le passage d'un token dans l'url.
+
 Pour avoir le cours du bitcoin depuis 24h, on peut donc appeler : https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1 
 
 et avoir en réponse (en raccourci) : 
