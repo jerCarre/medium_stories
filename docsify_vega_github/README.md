@@ -145,7 +145,7 @@ et avoir en réponse (en raccourci) :
 Plus qu'à mettre ça dans un diagramme :
 
 ````markdown
-# Hello Crypto world !
+# Hello crypto world !
 
 ```vegalite
 {
