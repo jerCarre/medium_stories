@@ -131,11 +131,11 @@ Pour obtenir :
 
 ### Une crypto dans Vega-Lite
 
-Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Mais il faut que cette API s'autosuffise et soit en GET car on ne peut pas préciser de header. Après quelques recherches j'ai trouvé coingecko qui permet d'avoir le cours d'une crypto sur les X derniers jours. De plus cette api ne nécessite pas de token, elle est publique.
+Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Il y a tout de même des contraintes : pas decgestion de header et uniquement en GET. Après quelques recherches, [coingecko](https://www.coingecko.com/en/api) semble correspondre. Il permet d'avoir le cours d'une crypto sur les X derniers jours, et ne nécessite pas de token d'accès.
 
 Pour avoir le cours du bitcoin depuis 24h, on peut donc appeler : https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1 
 
-et avoir (en raccourci) : 
+et avoir en réponse (en raccourci) : 
 ```json
 {"prices":[[1641137007567,41637.83411713587],[1641137244268,41579.072842123],[1641137476057,41578.04595490743],[1641137952530,41504.83017220277],[1641138178298,41502.722548713165],[1641138490632,41572.95862016224],[1641138725476,41664.34163465742],[1641139126440,41696.036160482596],[1641139324313,41706.24565959366],[1641139579229,41690.04405619627],[1641140038186,41750.43550340376],[1641140229278,41811.27689166205],[1641140453839,41735.801954558665],[1641140998579,41769.16264562593]]}
 ```
@@ -180,7 +180,7 @@ Plus qu'à mettre ça dans un diagramme :
 
 ## et pour finir ...
 
-On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi la valeur derniere valeie sera affichée en haut à droite.
+On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi avoir la derniere valeur affichée en haut à droite.
 
 ```vegalite
 {
@@ -231,4 +231,4 @@ On peut enrichir le diagramme avec des réglettes qui se déplacent avec la sour
     ]
   }
 ```
-Avec ces même données on pourrait aussi afficher par exemple la distribution des prix :
+Avec ces même données on pourra aussi afficher par exemple la distribution des prix :
