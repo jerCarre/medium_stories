@@ -76,7 +76,7 @@ Nous aurons donc les fichiers suivants dans notre repo :
 
 ## Vega-Lite forever
 
-[Vega](https://vega.github.io/vega/) est une library javascript permettant d'afficher des diagrammes (courbes, nuages de points, camembert, cartes, ...) . Elle se base sur une grammaire au format json. [Vega-Lite](https://vega.github.io/vega-lite/) est une version allégée de Vega. Vega/Vega-Lite a l'avantage de ne nécessiter que quelques imports pour fonctionne. Vega est prévu pour être embarqué dans d'autres outils. 
+[Vega](https://vega.github.io/vega/) est une library javascript permettant d'afficher des diagrammes (courbes, nuages de points, camembert, cartes, ...) . Elle se base sur une grammaire au format json. [Vega-Lite](https://vega.github.io/vega-lite/) est une version allégée de Vega. Vega/Vega-Lite a l'avantage de ne nécessiter que quelques imports pour fonctionner. Vega est prévu pour être embarqué dans d'autres outils. 
 
 Un aperçu de ce que l'on peut dessiner avec dans [ce précédent article](https://medium.com/@jerome.carre/au-rapport-chef-f186726a7de8).
 
