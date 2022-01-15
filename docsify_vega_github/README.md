@@ -10,7 +10,7 @@ tags:
 
 # Comment afficher le cours d'une crypto sur sa page github ?
 
-Derrière ce titre racoleur, se cache un article sur la création d'un site statique affichant un diagramme (le cours d'une crypto).
+Derrière ce titre racoleur, se cache un article sur la création d'un site statique affichant un diagramme avec des données dynamiques comme le cours d'une crypto.
 
 ## Docsify c'est quoi ?
 
