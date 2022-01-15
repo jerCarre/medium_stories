@@ -6,7 +6,36 @@
 https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json
 ```
 
-## first crypto chart
+## First crypto chart
+
+```vegalite
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bitcoin/eur last day evolution",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "format": {"type": "json", "property": "prices"},
+    "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1"
+  },
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "0", 
+      "type": "temporal", 
+      "axis": {"title": "last day"}
+    },
+    "y": {
+      "field": "1",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "axis": {"title": "price in €"}
+    }    
+  }
+}
+```
+
+## Advanced crypto chart
 
 ```vegalite
 {
@@ -56,12 +85,6 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
       }
     ]
   }
-```
-
-## advanced crypto chart
-
-```vegalite
-
 ```
 
 ## Bitcoin last 60 days distribution chart
