@@ -67,5 +67,30 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
 ## distribution chart
 
 ```vegalite
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 600,
+  "data": {
+    "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=60",
+    "format": {"type": "json", "property": "prices"}
+  },
+  "transform": [
+    { "calculate": "round(0.01*datum[1])/0.01", "as": "rounded" },
+    {
+      "aggregate": [{
+       "op": "count",
+       "field": "rounded",
+       "as": "_count"
+      }],
+      "groupby": ["rounded"]
+    }
+  ],
+  "mark": "area",
+  "encoding": {
+    "x": {"field": "rounded", "type": "quantitative", "title": "rounded price"},
+    "y": {"field": "_count", "type": "quantitative", "title": false}
+  }
+}
 
 ```
