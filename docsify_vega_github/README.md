@@ -51,28 +51,27 @@ Hello world !
 
 ## Pages dans Github
 
-Github propose gratuitement le service Pages pour héberger un site statique reposant sur du HTML, CSS, Javascript. Il fournit aussi une URL pour accéder à votre site.
+Github propose gratuitement le service Pages pour héberger un site statique reposant sur du HTML, CSS, Javascript. Il fournit aussi une URL pour accéder à ce site.
 
 Pour utiliser Pages, il suffit : 
 1. de créer un repo **public**
 2. d'aller dans ```Settings->Pages```
-3. de choisir la branche hébergeant votre html
+3. de choisir la branche hébergeant votre site
 4. d'indiquer le chemin vers index.html de docsify. 
 
-En retour Github vous indique l'URL d'accès. 
+En retour Github vous indiquera l'URL d'accès. 
 
 Après quelques secondes, votre site est en ligne !!
 
 ![](empty.png)
 
-> Github Pages préconise Jekyll pour générer votre site, puisque nous ne voulons pas l'utiliser, nous ajouterons un fichier nommé ".nojekyll" vide à la racine du site.
-
 Nous aurons donc les fichiers suivants dans notre repo : 
 
-```shell
-.nojekyll
-index.html
-README.md
+```text
+.
+└── /
+    ├── index.html
+    └── README.md
 ```
 
 ## Vega-Lite forever
