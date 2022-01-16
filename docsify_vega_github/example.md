@@ -62,6 +62,18 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
         }
       },
       {
+      "encoding": {
+      "x": {"aggregate": "max", "field": "0", "type": "temporal"},
+      "y": {"aggregate": {"argmax": "0"}, "field": "1", "type": "quantitative"}
+    },
+    "layer": [{
+      "mark": {"type": "circle"}
+    }, {
+      "mark": {"type": "text", "align": "left", "dx": 4},
+      "encoding": {"text": {"field":"1", "type": "quantitative"}}
+    }]
+      },
+      {
         "mark": "rule",
         "encoding": {
           "opacity": {
