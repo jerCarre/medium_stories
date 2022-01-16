@@ -46,8 +46,7 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
     "data": {
       "format": {"type": "json", "property": "prices"},
       "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1"
-    },
-    "encoding": {"x": {"field": "0", "type": "temporal", "axis": {"title": "last day"}}},
+    },  
     "layer": [
       {
         "layer": [
@@ -58,6 +57,7 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
           }
         ],
         "encoding": {
+        "x": {"field": "0", "type": "temporal", "axis": {"title": "last day"}},
           "y": {"field": "1", "type": "quantitative", "scale": {"zero": false}, "axis": {"title": "price in €"}}
         }
       },
