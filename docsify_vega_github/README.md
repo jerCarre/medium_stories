@@ -87,7 +87,7 @@ Un aperçu de ce que l'on peut dessiner avec dans [ce précédent article](https
 
 Docsify permet d'afficher des diagrammes au format Mermaid, pour en intégrer d'autres il faut utiliser des plugins. Aucun plugin n'étant recensé sur [cette page](https://docsify.js.org/#/awesome?id=plugins), j'en ai donc développé un pour Vega/Vega-Lite. Son utilisation est décrite ici https://jercarre.github.io/vega_docsify/#/ 
 
-On a donc notre fichier index.html :
+On a donc notre fichier index.html (avec 4 lignes script en plus à la fin) :
 
 ```html
 <!DOCTYPE html>
@@ -195,7 +195,7 @@ Avec ces même données on peut aussi afficher la distribution des prix :
 
 ## En conclusion
 
-Comme on a pu le voir on peut déployer sur Github en quelques minutes un site staique affichant des des données dynamiques. Et tout cela sans aucune ligne de HTML ni de javascript. On ne se concentre que sur le contenu !
+Comme on a pu le voir on peut déployer sur Github en quelques minutes un site staique affichant des données dynamiques, et sans aucune ligne de HTML ni de javascript. On ne se concentre que sur le contenu !
 
 *Quelques liens utiles*
 
