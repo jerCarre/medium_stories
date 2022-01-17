@@ -4,6 +4,7 @@ title: "Comment afficher le cours d'une crypto sur sa page github ?"
 tags: 
   - markdown
   - vega
+  - vega-lite
   - docsify
   - github
 ---
@@ -73,6 +74,8 @@ Nous aurons donc les fichiers suivants dans notre repo :
     ├── index.html
     └── README.md
 ```
+
+> On peut évidemment faire beaucoup plus de choses avec Docsify !
 
 ## Vega-Lite forever
 
@@ -178,59 +181,26 @@ Plus qu'à mettre ça dans un diagramme :
 
 ````
 
-![](vegacrypto.png)
+![](firstcryptochart.png)
 
-## et pour finir ...
+## et un peu plus ...
 
-On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi avoir la derniere valeur affichée en haut à droite.
+On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi avoir la derniere valeur affichée à droite.
 
-```vegalite
-{
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "description": "Bitcoin/eur last day evolution",
-    "width": 500,
-    "height": 300,
-    "data": {
-      "format": {"type": "json", "property": "prices"},
-      "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1"
-    },
-    "encoding": {"x": {"field": "0", "type": "temporal", "axis": {"title": "last day"}}},
-    "layer": [
-      {
-        "layer": [
-          {"mark": "line"},
-          {
-            "transform": [{"filter": {"param": "hover", "empty": false}}],
-            "mark": "point"
-          }
-        ],
-        "encoding": {
-          "y": {"field": "1", "type": "quantitative", "scale": {"zero": false}, "axis": {"title": "price in €"}}
-        }
-      },
-      {
-        "mark": "rule",
-        "encoding": {
-          "opacity": {
-            "condition": {"value": 0.3, "param": "hover", "empty": false},
-            "value": 0
-          },
-          "tooltip": [{"field": "1", "title": "price"}]
-        },
-        "params": [
-          {
-            "name": "hover",
-            "select": {
-              "type": "point",
-              "fields": ["0"],
-              "nearest": true,
-              "on": "mouseover",
-              "clear": "mouseout"
-            }
-          }
-        ]
-      }
-    ]
-  }
-```
-Avec ces même données on pourra aussi afficher par exemple la distribution des prix :
+![](advancedcryptochart.png)
+
+Avec ces même données on peut aussi afficher la distribution des prix :
+
+![](distributionchart.png)
+
+## En conclusion
+
+Comme on a pu le voir on peut déployer sur Github en quelques minutes un site staique affichant des des données dynamiques. Et tout cela sans aucune ligne de HTML ni de javascript. On ne se concentre que sur le contenu !
+
+## Quelques liens utiles :
+
+- [Les sources de cet article et des exemples](https://github.com/jerCarre/medium_stories/tree/main/docsify_vega_github)
+- [Docsify](https://docsify.js.org)
+- [Vega-Lite](https://vega.github.io/vega-lite/)
+- [coingecko](https://www.coingecko.com/en/api)
+- Une [Github action](https://github.com/philips-software/post-to-medium-action) pour publier automatiquement sur Medium
