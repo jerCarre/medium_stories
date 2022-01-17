@@ -1,5 +1,5 @@
 ---
-title: "Comment afficher le cours d'une crypto sur sa page github ?"
+title: "Comment afficher le cours d'une crypto sur sa page Github ?"
 
 tags: 
   - markdown
@@ -9,9 +9,9 @@ tags:
   - github
 ---
 
-# Comment afficher le cours d'une crypto sur sa page github ?
+# Comment afficher le cours d'une crypto sur sa page Github ?
 
-Derrière ce titre racoleur, se cache un article sur la création d'un site statique affichant un diagramme avec des données dynamiques comme le cours d'une crypto.
+Derrière ce titre racoleur, se cache un article sur la création d'un site statique affichant un diagramme avec des données dynamiques (ie. le cours d'une crypto).
 
 ## Docsify c'est quoi ?
 
