@@ -50,6 +50,8 @@ Hello world !
 
 ```
 
+> On peut évidemment faire beaucoup plus de choses avec Docsify !
+
 ## Pages dans Github
 
 Github propose gratuitement le service Pages pour héberger un site statique reposant sur du HTML, CSS, Javascript. Il fournit aussi une URL pour accéder à ce site.
@@ -74,8 +76,6 @@ Nous aurons donc les fichiers suivants dans notre repo :
     ├── index.html
     └── README.md
 ```
-
-> On peut évidemment faire beaucoup plus de choses avec Docsify !
 
 ## Vega-Lite forever
 
