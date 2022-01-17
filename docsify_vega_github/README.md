@@ -132,6 +132,8 @@ Pour obtenir :
 
 ![](firstvega.png)
 
+[DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=simple-vega-chart)
+
 ### Une crypto dans Vega-Lite
 
 Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Il y a tout de même des contraintes : pas de gestion de header et uniquement en GET. Après quelques recherches, l'API [coingecko](https://www.coingecko.com/en/api) semble être idéale. Ellel permet d'avoir le cours d'une crypto sur les X derniers jours, et ne nécessite pas de token d'accès.
@@ -183,15 +185,21 @@ Plus qu'à mettre ça dans un diagramme :
 
 ![](firstcryptochart.png)
 
+[DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=first-crypto-chart)
+
 ## et un peu plus ...
 
 On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi avoir la derniere valeur affichée à droite.
 
 ![](advancedcryptochart.png)
 
+[DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=advanced-crypto-chart)
+
 Avec ces même données on peut aussi afficher la distribution des prix :
 
 ![](distributionchart.png)
+
+[DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=bitcoin-last-60-days-distribution-chart)
 
 ## En conclusion
 
