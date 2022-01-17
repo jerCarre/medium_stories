@@ -64,7 +64,7 @@ En retour Github vous indiquera l'URL d'accès.
 
 Après quelques secondes, votre site est en ligne !!
 
-![](empty.png)
+![](https://jercarre.github.io/medium_stories/docsify_vega_github/empty.png)
 
 Nous aurons donc les fichiers suivants dans notre repo : 
 
@@ -130,7 +130,7 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
 
 Pour obtenir :
 
-![](firstvega.png)
+![](https://jercarre.github.io/medium_stories/docsify_vega_github/firstvega.png)
 
 [DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=simple-vega-chart)
 
@@ -183,7 +183,7 @@ Plus qu'à mettre ça dans un diagramme :
 
 ````
 
-![](firstcryptochart.png)
+![](https://jercarre.github.io/medium_stories/docsify_vega_github/firstcryptochart.png)
 
 [DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=first-crypto-chart)
 
@@ -191,13 +191,13 @@ Plus qu'à mettre ça dans un diagramme :
 
 On peut enrichir le diagramme avec des réglettes qui se déplacent avec la souris sur la courbe. Aussi avoir la derniere valeur affichée à droite.
 
-![](advancedcryptochart.png)
+![](https://jercarre.github.io/medium_stories/docsify_vega_github/advancedcryptochart.png)
 
 [DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=advanced-crypto-chart)
 
 Avec ces même données on peut aussi afficher la distribution des prix :
 
-![](distributionchart.png)
+![](https://jercarre.github.io/medium_stories/docsify_vega_github/distributionchart.png)
 
 [DEMO](https://jercarre.github.io/medium_stories/#/docsify_vega_github/example?id=bitcoin-last-60-days-distribution-chart)
 
