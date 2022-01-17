@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main ]
+    paths:
+      - docsify_vega_github/README.md
+      - docsify_vega_github/*.png      
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout source code"
+        uses: "actions/checkout@v1"    
+      - name: "Create Medium Post"
+        uses: philips-software/post-to-medium-action@v0.4.1
+        with:
+          integration_token: "${{ secrets.MEDIUM_ACCESS_TOKEN }}"
+          file: "docsify_vega_github/README.md"
+          content_format: "markdown"
+          parse_frontmatter: true
