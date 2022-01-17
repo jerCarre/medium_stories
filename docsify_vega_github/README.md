@@ -199,7 +199,7 @@ Comme on a pu le voir on peut déployer sur Github en quelques minutes un site s
 
 *Quelques liens utiles*
 
-- [Les sources de cet article et des exemples](https://github.com/jerCarre/medium_stories/tree/main/docsify_vega_github)
+- [Les sources de cet article et des exemples](https://jercarre.github.io/medium_stories/#/)
 - [Docsify](https://docsify.js.org)
 - [Vega-Lite](https://vega.github.io/vega-lite/)
 - [coingecko](https://www.coingecko.com/en/api)
