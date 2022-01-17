@@ -41,8 +41,8 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Bitcoin/eur last day evolution",
-  "width": 600,
-  "height": 450,
+  "width": 800,
+  "height": 600,
   "data": {
     "format": {"type": "json", "property": "prices"},
     "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=1"
@@ -144,8 +144,8 @@ https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.js
 ```vegalite
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
-  "height": 450,
+  "width": 800,
+  "height": 600,
   "data": {
     "url": "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=eur&days=60",
     "format": {"type": "json", "property": "prices"}
