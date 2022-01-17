@@ -197,7 +197,7 @@ Avec ces même données on peut aussi afficher la distribution des prix :
 
 Comme on a pu le voir on peut déployer sur Github en quelques minutes un site staique affichant des des données dynamiques. Et tout cela sans aucune ligne de HTML ni de javascript. On ne se concentre que sur le contenu !
 
-## Quelques liens utiles :
+*Quelques liens utiles*
 
 - [Les sources de cet article et des exemples](https://github.com/jerCarre/medium_stories/tree/main/docsify_vega_github)
 - [Docsify](https://docsify.js.org)
