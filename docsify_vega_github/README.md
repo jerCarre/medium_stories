@@ -134,7 +134,7 @@ Pour obtenir :
 
 ### Une crypto dans Vega-Lite
 
-Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Il y a tout de même des contraintes : pas decgestion de header et uniquement en GET. Après quelques recherches, [coingecko](https://www.coingecko.com/en/api) semble correspondre. Il permet d'avoir le cours d'une crypto sur les X derniers jours, et ne nécessite pas de token d'accès.
+Vega/Vega-Lite a aussi l'avantage de pouvoir lire ses données depuis une API. Il y a tout de même des contraintes : pas de gestion de header et uniquement en GET. Après quelques recherches, l'API [coingecko](https://www.coingecko.com/en/api) semble être idéale. Ellel permet d'avoir le cours d'une crypto sur les X derniers jours, et ne nécessite pas de token d'accès.
 
 > Dans la mesure ou l'appel vers cette API est réalisé par le navigateur, il sera impossible de masquer le passage d'un token dans l'url.
 
