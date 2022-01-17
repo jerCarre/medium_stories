@@ -19,7 +19,7 @@ La publication de sites statiques est de plus en plus à la mode, car leur mise 
 Plusieurs outils se partagent l'affiche : [Jekyll](https://jekyllrb.com/), [Hugo](https://gohugo.io/) ... J'en ai choisi un autre : [Docsify](https://docsify.js.org).
 Il a comme avantage de prendre en entrée du markdown ( [j'aime le markdown](https://medium.com/@jerome.carre/au-rapport-chef-f186726a7de8) ) et surtout de le traiter en l'état, il ne fait pas de transformation préalable en HTML. 
 
-L'installation de docsify se résume à déposer un fichier index.html et un fichier de contenu README.md à la racine du site :
+L'installation de docsify se résume à déposer à la racine du site, un fichier index.html :
 
 ```html
 <!DOCTYPE html>
@@ -42,6 +42,8 @@ L'installation de docsify se résume à déposer un fichier index.html et un fic
 </body>
 </html>
 ```
+
+ et un fichier de contenu README.md :
 
 ```markdown
 # README.md
