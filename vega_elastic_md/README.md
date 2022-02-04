@@ -301,4 +301,4 @@ Mais tout ne s'est pas passé exactement comme on le souhaitait. Il faut donc se
 
 ## Sources
 
-![gitbub](https://jercarre.github.io/medium_stories/GitHub-Mark-32px.png) : [repo github](https://github.com/jerCarre/elasticsearch_vegalite_markdown)
+![gitbub](https://jercarre.github.io/medium_stories/GitHub-Mark-32px.png) : [repo github](https://jercarre.github.io/medium_stories/#/)
