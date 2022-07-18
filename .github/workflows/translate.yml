@@ -1,11 +1,6 @@
 name: translation
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'docsify_vega_github/README.md'
-    branches-ignore:
-      - main
 jobs:
   translate2en:
     name: Translate to EN
