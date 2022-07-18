@@ -1,0 +1,41 @@
+name: Translate workflow
+
+on:
+  workflow_call:
+    inputs:
+      input_file:
+        required: true
+        type: string
+      output_file:
+        required: true
+        type: string                    
+      output_lang:
+        required: true
+        type: string
+    secrets:
+      TOKEN:
+        required: true
+
+jobs:
+  translateJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Translate
+        id: translate
+        uses: jerCarre/deepl_action@1.0
+        with:
+          input_file: ${{ inputs.input_file }}
+          output_file: ${{ inputs.output_file }}
+          output_lang: ${{ inputs.output_lang }}
+          deepl_free_token: "${{ secrets.TOKEN }}"       
+      - name: Commit outputs
+        continue-on-error: true
+        run: |
+          git config --global user.name 'medium_stories'
+          git config --global user.email 'medium_stories@users.noreply.github.com'
+          git pull
+          git add  ${{steps.translate.outputs.generated_file}}
+          git commit -am "translation"
+          git push
