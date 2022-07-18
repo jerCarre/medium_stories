@@ -1,0 +1,13 @@
+name: translation
+on:
+  workflow_dispatch:
+jobs:
+  translate2en:
+    name: Translate to EN
+    uses: ./.github/workflows/translate_template.yml
+    with:
+      input_file: docsify_vega_github/README.md
+      output_file: docsify_vega_github/README_en.md
+      output_lang: EN-US
+    secrets:
+      TOKEN: ${{ secrets.DEEPL_TOKEN }}
