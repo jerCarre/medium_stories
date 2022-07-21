@@ -1,6 +1,7 @@
 name: CI_f_ck_english_stories
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths:
@@ -16,6 +17,7 @@ jobs:
       - name: "Checkout source code"
         uses: "actions/checkout@v1"
       - name: Translate to EN
+          if: ${{ github.event_name == 'push' }}
           uses: ./.github/workflows/translate_template.yml
           with:
             input_file: f_ck_english_stories/README.md
@@ -23,10 +25,11 @@ jobs:
             output_lang: EN-US
           secrets:
             TOKEN: ${{ secrets.DEEPL_TOKEN }}
-#      - name: "Create Medium Post"
-#        uses: philips-software/post-to-medium-action@v0.4.1
-#        with:
-#          integration_token: "${{ secrets.MEDIUM_ACCESS_TOKEN }}"
-#          file: "f_ck_english_stories/README.md"
-#          content_format: "markdown"
-#          parse_frontmatter: true
+      - name: "Create Medium Post"
+        if: ${{ github.event_name == 'workflow_dispatch' }}
+        uses: philips-software/post-to-medium-action@v0.4.1
+        with:
+          integration_token: "${{ secrets.MEDIUM_ACCESS_TOKEN }}"
+          file: "f_ck_english_stories/README.md"
+          content_format: "markdown"
+          parse_frontmatter: true
